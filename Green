@@ -1,0 +1,9 @@
+graph LR
+    A[Foydalanuvchilar] --> B{Load Balancer}
+    B --> C[Veb-server]
+    B --> D[API server]
+    C --> E[(Ma'lumotlar Bazasi)]
+    D --> E
+    E --> F[Backup Server]
+    C --> G[CDN]
+    D --> H[Analitika Tizimi]
